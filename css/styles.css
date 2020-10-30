@@ -1,0 +1,750 @@
+/*CSS Åsa Lodesjö MIUN 2020*/
+
+/*Body*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #222;
+  background-color: #efebe7;
+}
+
+/*Index and login page*/
+
+.index-container {
+  background-color: #efebe7;
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*Contatainer login*/
+
+.index-container .log-in {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.index-container .log-in h1 {
+  font-family: "Cardo", serif;
+  font-size: 1.7em;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+/*Container login form*/
+
+.index-container form {
+  width: 250px;
+  text-align: left;
+}
+
+.index-container form label {
+  font-family: "Cardo", serif;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/*Contatainer login form input*/
+
+.index-container form input {
+  width: 100%;
+  padding: 3px 0;
+  border: 1px solid #cccccc;
+  margin: 10px 0;
+}
+
+/*Container login button*/
+
+.index-container form .btn {
+  border: none;
+  background-color: #6d9972;
+  color: #fff;
+  width: 100%;
+  padding: 6px;
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*Contatainer login button hover*/
+
+.index-container form .btn:hover {
+  border: none;
+  background-color: #87b38c;
+  width: 100%;
+  padding: 6px;
+  font-weight: 600;
+}
+
+/*Error-message*/
+
+.error {
+  color: #000;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*Admin-page*/
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*Homepage button*/
+
+header .homepage-btn {
+  position: fixed;
+  top: 20px;
+  right: 170px;
+  background-color: #d49494;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+header .homepage-btn:hover {
+  background-color: #e6aeae;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*Logout button*/
+
+header .logout-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #d49494;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+header .logout-btn:hover {
+  background-color: #e6aeae;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*CV*/
+
+.container #CV {
+  margin-top: 50px;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #CV h2 {
+  font-family: "Cardo", serif;
+  font-size: 1.7em;
+  font-weight: 600;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  margin-bottom: 20px;
+}
+
+.container #CV p {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container #CV #printCV {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
+.container #CV #printCV .CV {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #CV #printCV .CV p {
+  margin: 5px 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/*Delete button CV*/
+
+.container #CV #printCV .CV .delete {
+  background-color: #9e4646;
+  color: #ffffff;
+  width: 80%;
+  margin: 5px 0;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container #CV #printCV .CV .delete:hover {
+  background-color: #c47070;
+}
+
+/*Update button CV*/
+
+.container #CV #printCV .CV .update {
+  background-color: #6d8dac;
+  color: #ffffff;
+  width: 80%;
+  margin: 5px 0;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*Update button CV hover*/
+
+.container #CV #printCV .CV .update:hover {
+  background-color: #98b6d1;
+  color: #ffffff;
+}
+
+/*CV-Form*/
+
+.container #CV #CVForm {
+  margin-top: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.container #CV #CVForm h3 {
+  font-family: "Cardo", serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+
+.container #CV #CVForm label {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.container #CV #CVForm #CVId {
+  display: none;
+}
+
+.container #CV #CVForm input {
+  width: 100%;
+  padding: 3px 0;
+  border: none;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+/*Add button CV*/
+
+.container #CV #CVForm #addCV {
+  background-color: #6d9972;
+  color: #ffffff;
+  padding: 5px 0;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container #CV #CVForm #addCV:hover {
+  background-color: #87b38c;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: none;
+}
+
+/*Portfolio*/
+
+.container #portfolio {
+  margin-top: 50px;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #portfolio h2 {
+  font-family: "Cardo", serif;
+  font-size: 1.7em;
+  font-weight: 600;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  margin-bottom: 20px;
+}
+
+.container #portfolio p {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container #portfolio #printPortfolio {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
+.container #portfolio #printPortfolio .portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #portfolio #printPortfolio .portfolio p {
+  margin: 5px 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/*Link portfolio*/
+
+.container #portfolio #printPortfolio .portfolio a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*Link portfolio hover*/
+
+.container #portfolio #printPortfolio .portfolio a:hover {
+  color: #d49494;
+}
+
+/*Button portfolio delete*/
+
+.container #portfolio #printPortfolio .portfolio .delete {
+  background-color: #9e4646;
+  color: #ffffff;
+  width: 80%;
+  margin: 5px 0;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*Button portfolio delete hover*/
+
+.container #portfolio #printPortfolio .portfolio .delete:hover {
+  background-color: #c47070;
+}
+
+/*Button portfolio update*/
+
+.container #portfolio #printPortfolio .portfolio .update {
+  background-color: #6d8dac;
+  color: #ffffff;
+  width: 80%;
+  margin: 5px 0;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*Button portfolio update hover*/
+
+.container #portfolio #printPortfolio .portfolio .update:hover {
+  background-color: #98b6d1;
+  color: #ffffff;
+}
+
+/*Portfolio form*/
+
+.container #portfolio #portfolioForm {
+  margin-top: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.container #portfolio #portfolioForm h3 {
+  font-family: "Cardo", serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+
+.container #portfolio #portfolioForm label {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.container #portfolio #portfolioForm #portfolioId {
+  display: none;
+}
+
+.container #portfolio #portfolioForm input {
+  width: 100%;
+  padding: 3px 0;
+  border: none;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+/*Add-button portfolio*/
+
+.container #portfolio #portfolioForm #addPortfolio {
+  background-color: #6d9972;
+  color: #ffffff;
+  padding: 5px 0;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container #portfolio #portfolioForm #addPortfolio:hover {
+  background-color: #87b38c;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: none;
+}
+
+/*Courses*/
+
+.container #courses {
+  margin-top: 50px;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #courses h2 {
+  font-family: "Cardo", serif;
+  font-size: 1.7em;
+  font-weight: 600;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  margin-bottom: 20px;
+}
+
+.container #courses p {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container #courses #printCourses {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
+.container #courses #printCourses .courses {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container #courses #printCourses .courses p {
+  margin: 5px 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/*Courses button delete*/
+
+.container #courses #printCourses .courses .delete {
+  background-color: #9e4646;
+  color: #ffffff;
+  width: 80%;
+  margin: 5px 0;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*Courses button delete hover*/
+
+.container #courses #printCourses .courses .delete:hover {
+  background-color: #c47070;
+}
+
+/*Courses button update*/
+
+.container #courses #printCourses .courses .update {
+  background-color: #6d8dac;
+  color: #ffffff;
+  width: 80%;
+  margin: 5px 0;
+  padding: 5px 0;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*Courses update hover*/
+
+.container #courses #printCourses .courses .update:hover {
+  background-color: #98b6d1;
+  color: #ffffff;
+}
+
+/*Courses-form*/
+
+.container #courses #coursesForm {
+  margin-top: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.container #courses #coursesForm label {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.container #courses #coursesForm #coursesId {
+  display: none;
+}
+
+.container #courses #coursesForm input {
+  width: 100%;
+  padding: 3px 0;
+  border: none;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+.container #courses #coursesForm h3 {
+  font-family: "Cardo", serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+
+/*Add courses button*/
+
+.container #courses #coursesForm #addCourses {
+  background-color: #6d9972;
+  color: #ffffff;
+  padding: 5px 0;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*Add courses button hover*/
+
+.container #courses #coursesForm #addCourses:hover {
+  background-color: #87b38c;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: none;
+}
+
+/*Smaller screens - Mobile/Ipad*/
+
+@media screen and (max-width: 768px) {
+  /*Homepage button*/
+  header .homepage-btn {
+    position: absolute;
+  }
+  /*Logout button*/
+  header .logout-btn {
+    position: absolute;
+  }
+  /*CV*/
+  .container #CV {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+  .container #CV h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #CV p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: none;
+  }
+  .container #CV #printCV {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #CV #printCV .CV {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+  .container #CV #printCV .CV p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    display: block;
+  }
+  .container #CV #printCV .CV button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .container #CV #printCV .CV .update {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-left: 2px;
+  }
+  .container #CV #CVForm {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  /*Portfolio*/
+  .container #portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+  .container #portfolio h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #portfolio p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: none;
+  }
+  .container #portfolio #printPortfolio {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #portfolio #printPortfolio .portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+  .container #portfolio #printPortfolio .portfolio p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    display: block;
+  }
+  .container #portfolio #printPortfolio .portfolio button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .container #portfolio #printPortfolio .portfolio .update {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-left: 2px;
+  }
+  .container #portfolio #portfolioForm {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  /*Courses*/
+  .container #courses {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+  .container #courses h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #courses p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: none;
+  }
+  .container #courses #printCourses {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .container #courses #printCourses .courses {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+  }
+  .container #courses #printCourses .courses p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    display: block;
+  }
+  .container #courses #printCourses .courses button {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    width: 100%;
+  }
+  .container #courses #printCourses .courses .update {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-left: 2px;
+  }
+  .container #courses #coursesForm {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
